@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Fiblang Documentation</title>
+</head>
+<body>
+    <header>
+        <h1>Fiblang Documentation</h1>
+        <nav>
+            <a href="#variables">Variables</a>
+            <a href="#output">Output to Console</a>
+            <a href="#input">Input</a>
+            <a href="#string-operations">String Operations</a>
+            <a href="#numeric-operations">Numeric Operations</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section id="variables">
+            <h2>Variables</h2>
+            <h3>Declaration</h3>
+            <p>To declare a variable, use the following syntax:</p>
+            <pre><code>let var_name = &lt;string, int, float&gt; &lt;"value", 10, 3.14&gt;;</code></pre>
+            <p>This creates a variable <code>var_name</code> that can hold a string, an integer, and a float.</p>
+
+            <h3>Assignment</h3>
+            <p>You can assign values to an already created variable based on its type:</p>
+            <pre><code>var_name = &lt;"value", 10, 3.14&gt;;</code></pre>
+
+            <h3>Deletion</h3>
+            <p>To delete a variable and free its resources, use:</p>
+            <pre><code>delete var_name;</code></pre>
+        </section>
+
+        <section id="output">
+            <h2>Output to Console</h2>
+            <h3>Write</h3>
+            <p>To output a variable or a string to the current line, use:</p>
+            <pre><code>write &lt;variable or "something"&gt;;</code></pre>
+
+            <h3>Write Line</h3>
+            <p>To output a string with a newline, use:</p>
+            <pre><code>writeLine &lt;variable or "something"&gt;;</code></pre>
+        </section>
+
+        <section id="input">
+            <h2>Input</h2>
+            <h3>Read Line</h3>
+            <p>To read data into a string variable (which must be declared beforehand), use:</p>
+            <pre><code>readLine var_name;</code></pre>
+        </section>
+
+        <section id="string-operations">
+            <h2>String Operations</h2>
+            <h3>Concatenation</h3>
+            <p>To concatenate two strings and store the result in an output variable, use:</p>
+            <pre><code>concat var_name_1 var_name_2 varname_output;</code></pre>
+        </section>
+
+        <section id="numeric-operations">
+            <h2>Numeric Operations</h2>
+            <h3>Mathematical Operations</h3>
+            <p>To perform a mathematical operation and output the result to a variable, use:</p>
+            <pre><code>math a * b out;</code></pre>
+            <p>Both <code>a</code> and <code>b</code> can be of type float or int.</p>
+
+            <h3>Square Root</h3>
+            <p>To get the square root of a number, use:</p>
+            <pre><code>sqrt a out;</code></pre>
+        </section>
+
+        <section id="system-commands">
+            <h2>Executing Terminal Commands</h2>
+            <p>To execute terminal commands, use:</p>
+            <pre><code>system &lt;string variable&gt; &lt;int variable&gt;;</code></pre>
+            <p>Here, the int variable is the exit code, and the string variable is the command.</p>
+            <p>Note that to execute terminal commands, you need to use <code><pre>-a "allow_execute_console_commands"</code></pre> in the interpreter's launch arguments.</p>
+        </section>
+
+        <section id="additional-info">
+            <h2>Additional Information</h2>
+            <p>You can also write:</p>
+            <pre><code>math a * a a;</code></pre>
+            <pre><code>sqrt a a;</code></pre>
+            <pre><code>concat var var var;</code></pre>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fiblang. All rights reserved.</p>
+    </footer>
+</body
+

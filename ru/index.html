@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiblang - Язык Программирования</title>
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Fiblang</h1>
+        <nav>
+            <button onclick="showSection('about')">О Fiblang</button>
+            <button onclick="window.location.href='docs.html'">Documentation</button>
+            <button onclick="showSection('download')">Скачать</button>
+        </nav>
+        </div>
+    </header>
+    
+    <div class="content">
+        <section id="about" style="display: block;">
+            <h2>О Fiblang</h2>
+            <p>Fiblang — это новый язык программирования, который сочетает в себе простоту и мощь. Он разработан для разработчиков, которые хотят создавать эффективные и читаемые программы. Язык вдохновлен последовательностью Фибоначчи, подчеркивая рост и элегантность в кодировании.</p> 
+            <p>Как разработчик, я нахожу Fiblang освежающим. Он позволяет быстро разрабатывать без ущерба для ясности. Синтаксис интуитивно понятен, что делает его доступным для новичков, при этом предлагая продвинутые функции для опытных программистов.</p> 
+            <p>Одной из выдающихся особенностей Fiblang является его сильный акцент на читаемости. Язык поощряет написание кода, который не только функционален, но и легко понимаем. Это особенно полезно в совместных средах, где несколько разработчиков работают над одной кодовой базой.</p> <p>Кроме того, Fiblang поддерживает различные парадигмы программирования, включая процедурное, функциональное и объектно-ориентированное программирование. Эта гибкость позволяет разработчикам выбирать наилучший подход для конкретных потребностей проекта.</p> 
+            <p>В целом, Fiblang — это не просто инструмент; это философия, которая продвигает чистые, эффективные и элегантные практики кодирования. Независимо от того, создаете ли вы небольшой скрипт или большое приложение, Fiblang предоставляет инструменты, необходимые для достижения успеха.</p>
+        </section>
+
+
+
+        <section id="download" style="display: none;">
+            <h2>Скачать</h2>
+            <p>Вы можете скачать последнюю версию Fiblang с репозитория github:</p>
+            <a href="https://github.com/callfishxt/Fiblang" class="download-btn">Скачать Fiblang</a>
+            <p>Если репозиторий не найден то это значит что репозиторий проекта еще не открыт!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fiblang. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content > section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiblang - Programming Language</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Fiblang</h1>
+            <nav>
+                <button onclick="showSection('about')">About Fiblang</button>
+                <button onclick="window.location.href='docs.html'">Documentation</button>
+                <button onclick="showSection('download')">Download</button>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="content">
+        <section id="about" style="display: block;">
+            <h2>About Fiblang</h2>
+            <p>Fiblang is a new programming language that combines simplicity and power. It is designed for developers who want to create efficient and readable programs. The language is inspired by the Fibonacci sequence, emphasizing growth and elegance in coding.</p>
+            <p>As a developer, I find Fiblang to be refreshing. It allows for rapid development without sacrificing clarity. The syntax is intuitive, making it accessible for beginners while still offering advanced features for seasoned programmers.</p>
+            <p>One of the standout features of Fiblang is its strong focus on readability. The language encourages writing code that is not only functional but also easy to understand. This is particularly beneficial in collaborative environments where multiple developers work on the same codebase.</p>
+            <p>Additionally, Fiblang supports a variety of programming paradigms, including procedural, functional, and object-oriented programming. This flexibility allows developers to choose the best approach for their specific project needs.</p>
+            <p>Overall, Fiblang is not just a tool; it's a philosophy that promotes clean, efficient, and elegant coding practices. Whether you're building a small script or a large application, Fiblang provides the tools you need to succeed.</p>
+        </section>
+
+        <section id="download" style="display: none;">
+            <h2>Download</h2>
+            <p>You can download the latest version of Fiblang from github repository:</p>
+            <a href="https://github.com/callfishxt/Fiblang" class="download-btn">Download Fiblang</a>
+            <p>If the repository is not found, this means that the project repository is not open yet!</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fiblang. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content > section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <title>Fiblang Документация</title>
+</head>
+<body>
+    <header>
+        <h1>Fiblang Документация</h1>
+        <nav>
+            <a href="#variables">Переменные</a>
+            <a href="#output">Вывод в консоль</a>
+            <a href="#input">Ввод</a>
+            <a href="#string-operations">Операции со строками</a>
+            <a href="#numeric-operations">Операции с числами</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <section id="variables">
+            <h2>Переменная</h2>
+            <h3>Декларация</h3>
+            <p>Чтобы декларировать переменную используйте данный синтакс:</p>
+            <pre><code>let var_name = &lt;string, int, float&gt; &lt;"value", 10, 3.14&gt;;</code></pre>
+            <p>это создаст переменную <code>var_name</code> которая может быть типа string integer или float.</p>
+
+            <h3>Значения</h3>
+            <p>Вы можете задать значения переменным исходя из их типа:</p>
+            <pre><code>var_name = &lt;"value", 10, 3.14&gt;;</code></pre>
+
+            <h3>Удаление переменных</h3>
+            <p>Чтобы удалить переменную и освободить ресурсы, используйте:</p>
+            <pre><code>delete var_name;</code></pre>
+        </section>
+
+        <section id="output">
+            <h2>Вывод в консоль</h2>
+            <h3>Write</h3>
+            <p>Чтобы вывести переменную на текущую строку, используйте:</p>
+            <pre><code>write &lt;variable or "something"&gt;;</code></pre>
+
+            <h3>Write Line</h3>
+            <p>Чтобы вывести что то на новой строке, используйте:</p>
+            <pre><code>writeLine &lt;variable or "something"&gt;;</code></pre>
+        </section>
+
+        <section id="input">
+            <h2>Ввод</h2>
+            <h3>Read line</h3>
+            <p>Чтобы считать данные в строковую переменную (которая должна быть объявлена заранее), используйте:</p>
+            <pre><code>readLine var_name;</code></pre>
+        </section>
+
+        <section id="string-operations">
+            <h2>Операции со строками</h2>
+            <h3>Concat</h3>
+            <p>Чтобы объединить две строки и сохранить результат в выходной переменной, используйте:</p>
+            <pre><code>concat var_name_1 var_name_2 varname_output;</code></pre>
+        </section>
+
+        <section id="numeric-operations">
+            <h2>Числовые операции</h2>
+            <h3>math</h3>
+            <p>Чтобы выполнить математическую операцию и вывести результат в переменную, используйте:</p>
+            <pre><code>math a * b out;</code></pre>
+            <p>Обе переменные <code>a</code> и <code>b</code> могут быть типа float или int.</p>
+
+            <h3>sqrt</h3>
+            <p>Чтобы получить квадратный корень числа, используйте:</p>
+            <pre><code>sqrt a out;</code></pre>
+        </section>
+
+        <section id="system-commands">
+            <h2>Выполнение команд терминала</h2>
+            <p>Чтобы выполнить команды терминала, используйте:</p>
+            <pre><code>system &lt;строковая переменная&gt; &lt;целочисленная переменная&gt;;</code></pre>
+            <p>Здесь целочисленная переменная — это код выхода, а строковая переменная — это команда.</p>
+            <p>учитывайте что для выполнения команд терминала нужно использовать <code><pre>-a "allow_execute_console_commands"</code></pre> в аргументах запуска интерпретатора</p>
+        </section>
+
+        <section id="additional-info">
+            <h2>Дополнительная информация</h2>
+            <p>Вы также можете написать:</p>
+            <pre><code>math a * a a;</code></pre>
+            <pre><code>sqrt a a;</code></pre>
+            <pre><code>concat var var var;</code></pre>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fiblang. All rights reserved.</p>
+    </footer>
+</body
+
